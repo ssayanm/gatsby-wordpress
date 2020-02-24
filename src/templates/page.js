@@ -8,14 +8,14 @@ class Page extends Component {
     const StaticPage = this.props.data.wordpressPage
 
     return (
-      <>
+      <div>
         <Layout>
           <SEO title="Home" />
           <Link to="/page-2/">Go to page 2</Link>
           <h1>{StaticPage.title}</h1>
           <div>{StaticPage.content}</div>
         </Layout>
-      </>
+      </div>
     )
   }
 }
